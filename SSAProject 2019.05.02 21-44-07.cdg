@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SSAProject">
+  <ClassDiagramComponents>
+    <Class name="AbstractFactory" package="SSA_PROJECT" visibility="public" isAbstract="true" xPosition="409.0" yPosition="57.0">
+      <Fields>
+        <Field name="datastore" type="DataStore" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="create_storePrice" returnType="Store_price" visibility="public" isAbstract="true"/>
+        <Method name="create_initCp" returnType="Init_Cost_Price" visibility="public" isAbstract="true"/>
+        <Method name="Create_return_coin" returnType="ReturnCoin" visibility="public" isAbstract="true"/>
+        <Method name="CreateAddCp" returnType="Add_Cost_Price" visibility="public" isAbstract="true"/>
+        <Method name="createDisposeWithAdd" returnType="DisposeWithAdd" visibility="public" isAbstract="true"/>
+        <Method name="Create_InitializeData" returnType="Initialize_data" visibility="public" isAbstract="true"/>
+        <Method name="GetData_store" returnType="DataStore" visibility="public" isAbstract="true"/>
+      </Methods>
+    </Class>
+    <Class name="Add_Cost_Price" package="SSA_PROJECT" visibility="public" isAbstract="true" xPosition="1481.0" yPosition="38.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="add_cp" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Add_Cost_Price_1" package="SSA_PROJECT" visibility="public" xPosition="1791.0" yPosition="3.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="add_cp" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Add_Cost_Price_2" package="SSA_PROJECT" visibility="public" xPosition="1791.0" yPosition="139.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="add_cp" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ConcreteFactory1" package="SSA_PROJECT" visibility="public" xPosition="82.0" yPosition="38.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="create_storePrice" returnType="Store_price" visibility="public"/>
+        <Method name="create_initCp" returnType="Init_Cost_Price" visibility="public"/>
+        <Method name="Create_return_coin" returnType="ReturnCoin" visibility="public"/>
+        <Method name="CreateAddCp" returnType="Add_Cost_Price" visibility="public"/>
+        <Method name="createDisposeWithAdd" returnType="DisposeWithAdd" visibility="public"/>
+        <Method name="Create_InitializeData" returnType="Initialize_data" visibility="public"/>
+        <Method name="GetData_store" returnType="DataStore" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ConcreteFactory2" package="SSA_PROJECT" visibility="public" xPosition="82.0" yPosition="287.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="create_storePrice" returnType="Store_price" visibility="public"/>
+        <Method name="create_initCp" returnType="Init_Cost_Price" visibility="public"/>
+        <Method name="Create_return_coin" returnType="ReturnCoin" visibility="public"/>
+        <Method name="CreateAddCp" returnType="Add_Cost_Price" visibility="public"/>
+        <Method name="createDisposeWithAdd" returnType="DisposeWithAdd" visibility="public"/>
+        <Method name="Create_InitializeData" returnType="Initialize_data" visibility="public"/>
+        <Method name="GetData_store" returnType="DataStore" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="DataStore" package="SSA_PROJECT" visibility="public" isAbstract="true" xPosition="448.0" yPosition="492.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="get_drink_type" returnType="int" visibility="public" isAbstract="true"/>
+        <Method name="set_drink_type" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_temp_p" returnType="int" visibility="public" isAbstract="true"/>
+        <Method name="set_temp_p" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_temp_v" returnType="int" visibility="public" isAbstract="true"/>
+        <Method name="set_temp_v" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_price" returnType="int" visibility="public" isAbstract="true"/>
+        <Method name="set_price" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_cp" returnType="int" visibility="public" isAbstract="true"/>
+        <Method name="set_cp" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_temp_p1" returnType="float" visibility="public" isAbstract="true"/>
+        <Method name="set_temp_p" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="float" name="x"/>
+        </Method>
+        <Method name="get_price1" returnType="float" visibility="public" isAbstract="true"/>
+        <Method name="set_price" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="float" name="x"/>
+        </Method>
+        <Method name="get_cp1" returnType="float" visibility="public" isAbstract="true"/>
+        <Method name="set_cp" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="float" name="x"/>
+        </Method>
+        <Method name="get_temp_v1" returnType="float" visibility="public" isAbstract="true"/>
+        <Method name="set_temp_v" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="float" name="x"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Datastore_1" package="SSA_PROJECT" visibility="public" xPosition="199.0" yPosition="542.0">
+      <Fields>
+        <Field name="DrinkType" type="int" visibility="private"/>
+        <Field name="Temp_p" type="int" visibility="private"/>
+        <Field name="Temp_v" type="int" visibility="private"/>
+        <Field name="Price" type="int" visibility="private"/>
+        <Field name="Cp" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="get_drink_type" returnType="int" visibility="public"/>
+        <Method name="set_drink_type" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_temp_p" returnType="int" visibility="public"/>
+        <Method name="set_temp_p" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_temp_v" returnType="int" visibility="public"/>
+        <Method name="set_temp_v" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_price" returnType="int" visibility="public"/>
+        <Method name="set_price" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_temp_p1" returnType="float" visibility="public"/>
+        <Method name="set_temp_p" returnType="void" visibility="public">
+          <Argument type="float" name="x"/>
+        </Method>
+        <Method name="get_price1" returnType="float" visibility="public"/>
+        <Method name="set_price" returnType="void" visibility="public">
+          <Argument type="float" name="x"/>
+        </Method>
+        <Method name="get_cp" returnType="int" visibility="public"/>
+        <Method name="set_cp" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_cp1" returnType="float" visibility="public"/>
+        <Method name="set_cp" returnType="void" visibility="public">
+          <Argument type="float" name="x"/>
+        </Method>
+        <Method name="get_temp_v1" returnType="float" visibility="public"/>
+        <Method name="set_temp_v" returnType="void" visibility="public">
+          <Argument type="float" name="x"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DataStore_2" package="SSA_PROJECT" visibility="public" xPosition="199.0" yPosition="1078.0">
+      <Fields>
+        <Field name="DrinkType" type="int" visibility="private"/>
+        <Field name="Temp_p" type="float" visibility="private"/>
+        <Field name="Temp_v" type="float" visibility="private"/>
+        <Field name="Price" type="float" visibility="private"/>
+        <Field name="Cp" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="get_drink_type" returnType="int" visibility="public"/>
+        <Method name="set_drink_type" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_temp_p" returnType="int" visibility="public"/>
+        <Method name="set_temp_p" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_temp_v" returnType="int" visibility="public"/>
+        <Method name="set_temp_v" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_price" returnType="int" visibility="public"/>
+        <Method name="set_price" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_cp" returnType="int" visibility="public"/>
+        <Method name="set_cp" returnType="void" visibility="public">
+          <Argument type="int" name="x"/>
+        </Method>
+        <Method name="get_temp_p1" returnType="float" visibility="public"/>
+        <Method name="set_temp_p" returnType="void" visibility="public">
+          <Argument type="float" name="x"/>
+        </Method>
+        <Method name="get_price1" returnType="float" visibility="public"/>
+        <Method name="set_price" returnType="void" visibility="public">
+          <Argument type="float" name="x"/>
+        </Method>
+        <Method name="get_cp1" returnType="float" visibility="public"/>
+        <Method name="set_cp" returnType="void" visibility="public">
+          <Argument type="float" name="x"/>
+        </Method>
+        <Method name="get_temp_v1" returnType="float" visibility="public"/>
+        <Method name="set_temp_v" returnType="void" visibility="public">
+          <Argument type="float" name="x"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DisposeWithAdd" package="SSA_PROJECT" visibility="public" isAbstract="true" xPosition="1492.0" yPosition="654.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="dispose_with_add" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="DataStore" name="ds"/>
+          <Argument type="int" name="A"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Dispose_with_additive1" package="SSA_PROJECT" visibility="public" xPosition="1804.0" yPosition="803.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="dispose_with_add" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+          <Argument type="int[]" name="A"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Dispose_with_additive2" package="SSA_PROJECT" visibility="public" xPosition="1804.0" yPosition="960.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="dispose_with_add" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+          <Argument type="int[]" name="A"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Driver" package="SSA_PROJECT" visibility="public" xPosition="685.0" yPosition="46.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InitializeData1" package="SSA_PROJECT" visibility="public" xPosition="1791.0" yPosition="401.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="InitializeData" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InitializeData2" package="SSA_PROJECT" visibility="public" xPosition="1791.0" yPosition="271.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="InitializeData" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Initialize_data" package="SSA_PROJECT" visibility="public" isAbstract="true" xPosition="1492.0" yPosition="254.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="InitializeData" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Init_Cost_Price" package="SSA_PROJECT" visibility="public" isAbstract="true" xPosition="1462.0" yPosition="1364.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="init_cp" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Init_Cost_Price_1" package="SSA_PROJECT" visibility="public" xPosition="1844.0" yPosition="1381.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="init_cp" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Init_Cost_Price_2" package="SSA_PROJECT" visibility="public" xPosition="1844.0" yPosition="1520.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="init_cp" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MDAEFSM" package="SSA_PROJECT" visibility="public" xPosition="886.0" yPosition="21.0">
+      <Fields>
+        <Field name="k" type="int" visibility="package"/>
+        <Field name="A" type="int" visibility="package"/>
+        <Field name="states" type="State[]" visibility="private"/>
+        <Field name="st" type="State" visibility="private"/>
+        <Field name="m" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Initialize" returnType="void" visibility="public">
+          <Argument type="AbstractFactory" name="af"/>
+        </Method>
+        <Method name="getM" returnType="int" visibility="public"/>
+        <Method name="setM" returnType="void" visibility="public">
+          <Argument type="int" name="m"/>
+        </Method>
+        <Method name="create" returnType="void" visibility="public"/>
+        <Method name="coin" returnType="void" visibility="public">
+          <Argument type="int" name="f"/>
+        </Method>
+        <Method name="card" returnType="void" visibility="public"/>
+        <Method name="additive" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="dispose_drink" returnType="void" visibility="public"/>
+        <Method name="insertCups" returnType="void" visibility="public">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="set_price" returnType="void" visibility="public"/>
+        <Method name="cancel" returnType="void" visibility="public"/>
+        <Method name="setState" returnType="void" visibility="public">
+          <Argument type="int" name="s"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="OutputProcessor" package="SSA_PROJECT" visibility="public" xPosition="1137.0" yPosition="241.0">
+      <Fields>
+        <Field name="ds" type="DataStore" visibility="private"/>
+        <Field name="A" type="int" visibility="package"/>
+        <Field name="sp" type="Store_price" visibility="private"/>
+        <Field name="ic" type="Init_Cost_Price" visibility="private"/>
+        <Field name="rc" type="ReturnCoin" visibility="private"/>
+        <Field name="ac" type="Add_Cost_Price" visibility="private"/>
+        <Field name="da" type="DisposeWithAdd" visibility="private"/>
+        <Field name="initializeData" type="Initialize_data" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Initialize" returnType="void" visibility="public">
+          <Argument type="AbstractFactory" name="af"/>
+        </Method>
+        <Method name="StorePrice" returnType="void" visibility="public"/>
+        <Method name="init_cp" returnType="void" visibility="public"/>
+        <Method name="returnCoin" returnType="void" visibility="public"/>
+        <Method name="add_cp" returnType="void" visibility="public"/>
+        <Method name="dispose_with_add" returnType="void" visibility="public">
+          <Argument type="int" name="A"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ReturnCoin" package="SSA_PROJECT" visibility="public" isAbstract="true" xPosition="1505.0" yPosition="454.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="returnCoin" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="returnCoin1" package="SSA_PROJECT" visibility="public" xPosition="1797.0" yPosition="531.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="returnCoin" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="returnCoin2" package="SSA_PROJECT" visibility="public" xPosition="1804.0" yPosition="662.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="returnCoin" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="S0" package="SSA_PROJECT" visibility="public" xPosition="886.0" yPosition="764.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="create" returnType="void" visibility="public"/>
+        <Method name="coin" returnType="void" visibility="public">
+          <Argument type="int" name="f"/>
+        </Method>
+        <Method name="card" returnType="void" visibility="public"/>
+        <Method name="additive" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="DisposeDrink" returnType="void" visibility="public"/>
+        <Method name="Insert_Cups" returnType="void" visibility="public">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="SetPrice" returnType="void" visibility="public"/>
+        <Method name="cancel" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="S1" package="SSA_PROJECT" visibility="public" xPosition="900.0" yPosition="1041.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="create" returnType="void" visibility="public"/>
+        <Method name="coin" returnType="void" visibility="public">
+          <Argument type="int" name="f"/>
+        </Method>
+        <Method name="card" returnType="void" visibility="public"/>
+        <Method name="additive" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="DisposeDrink" returnType="void" visibility="public"/>
+        <Method name="Insert_Cups" returnType="void" visibility="public">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="SetPrice" returnType="void" visibility="public"/>
+        <Method name="cancel" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="S2" package="SSA_PROJECT" visibility="public" xPosition="1088.0" yPosition="1041.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="create" returnType="void" visibility="public"/>
+        <Method name="coin" returnType="void" visibility="public">
+          <Argument type="int" name="f"/>
+        </Method>
+        <Method name="card" returnType="void" visibility="public"/>
+        <Method name="additive" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="DisposeDrink" returnType="void" visibility="public"/>
+        <Method name="Insert_Cups" returnType="void" visibility="public">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="SetPrice" returnType="void" visibility="public"/>
+        <Method name="cancel" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="S3" package="SSA_PROJECT" visibility="public" xPosition="1276.0" yPosition="1041.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="create" returnType="void" visibility="public"/>
+        <Method name="coin" returnType="void" visibility="public">
+          <Argument type="int" name="f"/>
+        </Method>
+        <Method name="card" returnType="void" visibility="public"/>
+        <Method name="additive" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="DisposeDrink" returnType="void" visibility="public"/>
+        <Method name="Insert_Cups" returnType="void" visibility="public">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="SetPrice" returnType="void" visibility="public"/>
+        <Method name="cancel" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="State" package="SSA_PROJECT" visibility="public" isAbstract="true" xPosition="1075.0" yPosition="617.0">
+      <Fields>
+        <Field name="op" type="OutputProcessor" visibility="package"/>
+        <Field name="m" type="MDAEFSM" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="create" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="coin" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="f"/>
+        </Method>
+        <Method name="card" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="additive" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="DisposeDrink" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="Insert_Cups" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="SetPrice" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="cancel" returnType="void" visibility="public" isAbstract="true"/>
+        <Method name="setOP" returnType="void" visibility="public">
+          <Argument type="OutputProcessor" name="op"/>
+        </Method>
+        <Method name="setMDAEFSM" returnType="void" visibility="public">
+          <Argument type="MDAEFSM" name="m"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="StorePrice1" package="SSA_PROJECT" visibility="public" xPosition="1844.0" yPosition="1095.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="StorePrice" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="StorePrice2" package="SSA_PROJECT" visibility="public" xPosition="1844.0" yPosition="1242.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="StorePrice" returnType="void" visibility="public">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Store_price" package="SSA_PROJECT" visibility="public" isAbstract="true" xPosition="1505.0" yPosition="999.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="StorePrice" returnType="void" visibility="public" isAbstract="true">
+          <Argument type="DataStore" name="ds"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="VM_1" package="SSA_PROJECT" visibility="public" xPosition="409.0" yPosition="1138.0">
+      <Fields>
+        <Field name="d" type="DataStore" visibility="private"/>
+        <Field name="m" type="MDAEFSM" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Initialize" returnType="void" visibility="public">
+          <Argument type="AbstractFactory" name="af"/>
+        </Method>
+        <Method name="create" returnType="void" visibility="package">
+          <Argument type="int" name="p"/>
+        </Method>
+        <Method name="coin" returnType="void" visibility="package">
+          <Argument type="int" name="v"/>
+        </Method>
+        <Method name="card" returnType="void" visibility="package">
+          <Argument type="float" name="x"/>
+        </Method>
+        <Method name="sugar" returnType="void" visibility="package"/>
+        <Method name="tea" returnType="void" visibility="package"/>
+        <Method name="chocolate" returnType="void" visibility="package"/>
+        <Method name="insert_cups" returnType="void" visibility="package">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="set_price" returnType="void" visibility="package">
+          <Argument type="int" name="p"/>
+        </Method>
+        <Method name="cancel" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+    <Class name="VM_2" package="SSA_PROJECT" visibility="public" xPosition="654.0" yPosition="1140.0">
+      <Fields>
+        <Field name="d" type="DataStore" visibility="private"/>
+        <Field name="m" type="MDAEFSM" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Initialize" returnType="void" visibility="public">
+          <Argument type="AbstractFactory" name="af"/>
+        </Method>
+        <Method name="CREATE" returnType="void" visibility="package">
+          <Argument type="float" name="p"/>
+        </Method>
+        <Method name="COIN" returnType="void" visibility="package">
+          <Argument type="float" name="v"/>
+        </Method>
+        <Method name="SUGAR" returnType="void" visibility="package"/>
+        <Method name="CREAM" returnType="void" visibility="package"/>
+        <Method name="COFFEE" returnType="void" visibility="package"/>
+        <Method name="InsertCups" returnType="void" visibility="package">
+          <Argument type="int" name="n"/>
+        </Method>
+        <Method name="SetPrice" returnType="void" visibility="package">
+          <Argument type="float" name="p"/>
+        </Method>
+        <Method name="CANCEL" returnType="void" visibility="package"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="SSA_PROJECT.Dispose_with_additive1" target="SSA_PROJECT.DisposeWithAdd"/>
+    <IsRelation name="is" source="SSA_PROJECT.S0" target="SSA_PROJECT.State"/>
+    <IsRelation name="is" source="SSA_PROJECT.Dispose_with_additive2" target="SSA_PROJECT.DisposeWithAdd"/>
+    <IsRelation name="is" source="SSA_PROJECT.Datastore_1" target="SSA_PROJECT.DataStore"/>
+    <HasRelation name="ac" source="SSA_PROJECT.OutputProcessor" target="SSA_PROJECT.Add_Cost_Price" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="SSA_PROJECT.DataStore_2" target="SSA_PROJECT.DataStore"/>
+    <HasRelation name="op" source="SSA_PROJECT.State" target="SSA_PROJECT.OutputProcessor" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="d" source="SSA_PROJECT.VM_1" target="SSA_PROJECT.DataStore" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="SSA_PROJECT.returnCoin1" target="SSA_PROJECT.ReturnCoin"/>
+    <IsRelation name="is" source="SSA_PROJECT.Init_Cost_Price_1" target="SSA_PROJECT.Init_Cost_Price"/>
+    <IsRelation name="is" source="SSA_PROJECT.Add_Cost_Price_2" target="SSA_PROJECT.Add_Cost_Price"/>
+    <HasRelation name="da" source="SSA_PROJECT.OutputProcessor" target="SSA_PROJECT.DisposeWithAdd" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="m" source="SSA_PROJECT.VM_1" target="SSA_PROJECT.MDAEFSM" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="SSA_PROJECT.Add_Cost_Price_1" target="SSA_PROJECT.Add_Cost_Price"/>
+    <IsRelation name="is" source="SSA_PROJECT.ConcreteFactory2" target="SSA_PROJECT.AbstractFactory"/>
+    <HasRelation name="datastore" source="SSA_PROJECT.AbstractFactory" target="SSA_PROJECT.DataStore" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="SSA_PROJECT.ConcreteFactory1" target="SSA_PROJECT.AbstractFactory"/>
+    <IsRelation name="is" source="SSA_PROJECT.S3" target="SSA_PROJECT.State"/>
+    <IsRelation name="is" source="SSA_PROJECT.Init_Cost_Price_2" target="SSA_PROJECT.Init_Cost_Price"/>
+    <IsRelation name="is" source="SSA_PROJECT.StorePrice2" target="SSA_PROJECT.Store_price"/>
+    <IsRelation name="is" source="SSA_PROJECT.InitializeData1" target="SSA_PROJECT.Initialize_data"/>
+    <HasRelation name="d" source="SSA_PROJECT.VM_2" target="SSA_PROJECT.DataStore" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="rc" source="SSA_PROJECT.OutputProcessor" target="SSA_PROJECT.ReturnCoin" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="initializeData" source="SSA_PROJECT.OutputProcessor" target="SSA_PROJECT.Initialize_data" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="st" source="SSA_PROJECT.MDAEFSM" target="SSA_PROJECT.State" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="sp" source="SSA_PROJECT.OutputProcessor" target="SSA_PROJECT.Store_price" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ic" source="SSA_PROJECT.OutputProcessor" target="SSA_PROJECT.Init_Cost_Price" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="m" source="SSA_PROJECT.State" target="SSA_PROJECT.MDAEFSM" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="SSA_PROJECT.S2" target="SSA_PROJECT.State"/>
+    <IsRelation name="is" source="SSA_PROJECT.InitializeData2" target="SSA_PROJECT.Initialize_data"/>
+    <IsRelation name="is" source="SSA_PROJECT.returnCoin2" target="SSA_PROJECT.ReturnCoin"/>
+    <HasRelation name="ds" source="SSA_PROJECT.OutputProcessor" target="SSA_PROJECT.DataStore" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="SSA_PROJECT.StorePrice1" target="SSA_PROJECT.Store_price"/>
+    <IsRelation name="is" source="SSA_PROJECT.S1" target="SSA_PROJECT.State"/>
+    <HasRelation name="m" source="SSA_PROJECT.VM_2" target="SSA_PROJECT.MDAEFSM" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
